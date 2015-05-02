@@ -90,7 +90,7 @@ def main():
 	if args.passwd:
 		passwd = getpass.getpass('Password to encrypt code: ')
 		params['password'] = passwd
-	if args.expire:#TODO:get expire time and verify commandline format given
+	if args.expire:#get expire time and verify commandline format given
 		params['expire'] = args.expire
 	ID = getID(args.filename)
 	if ID is not '':
